@@ -1,0 +1,12 @@
+version: "3"
+
+services:
+  web_udemy:
+    image: node_18
+    container_name: web_udemy
+    build:
+      context: .
+      dockerfile: ./docker/Dockerfile
+    tty: true
+    volumes:
+      - .:/workdir
